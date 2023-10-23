@@ -22,7 +22,7 @@ def ask_gpt(instruction: str, integer: int) -> str:
         print(responce + "\n", file=file)
     print(str(f"done with {integer} article"))
 
-# for i in range(0,25):
+# for i in range(0,30):
 #     ask_gpt(instruction, i)
 # file.close()
 

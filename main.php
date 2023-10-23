@@ -43,8 +43,9 @@
         <div class = "block">
         <?php
         $fd = fopen("article.txt", 'r') or die("не удалось открыть файл");
+        $lines = file("article.txt");
         setlocale(LC_ALL, 'Russian_Russia.1251');
-        for ($i = 0; $i < 25; $i++) {
+        for ($i = 0; $i < count($lines); $i++) {
             $line = fgets($fd);
             echo '<div class="cards">';
             echo '<img src="https://proprikol.ru/wp-content/uploads/2022/10/kartinki-s-mezhdunarodnym-dnem-gor-16-scaled.jpg">';
